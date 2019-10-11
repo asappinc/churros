@@ -23,4 +23,21 @@ class RxUnitTest {
         testObserver.assertValue(1)
         assertEquals(1, timesCalled)
     }
+
+    @Test
+    fun testRunIf() {
+        Single.just(1)
+            .runIf(condition = true) {
+                map { 2 * it }
+            }
+            .test()
+            .assertValue(2)
+
+        Single.just(1)
+            .runIf(condition = false) {
+                map { 2 * it }
+            }
+            .test()
+            .assertValue(1)
+    }
 }

@@ -1,0 +1,7 @@
+Badge
+----
+[![CircleCI](https://circleci.com/gh/asappinc/churros/tree/master.svg?style=svg)](https://circleci.com/gh/asappinc/churros/tree/master)
+
+Churros
+====
+This is a humble library dedicated to making the life of developers easier.

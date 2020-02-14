@@ -38,7 +38,8 @@ Things we have
         }
         .build()
 ```
-* exhaustive
+
+## exhaustive
 
 This code will work happily.
 ```kotlin

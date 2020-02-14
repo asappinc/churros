@@ -26,7 +26,7 @@ dependencies {
 
 Things we have
 ====
-* runIf
+## runIf
 ```kotlin
     val okHttpClient = OkHttpClient.Builder()
         .addInterceptor(interceptor)

@@ -12,6 +12,7 @@ fun Disposable.disposeWith(disposableContainer: DisposableContainer) {
     disposableContainer.add(this)
 }
 
+@Deprecated("Use the simpler com.asapp.churros.runIf. Will be removed in the next major version.")
 fun <T> Single<T>.runIf(condition: Boolean, block: Single<T>.() -> Single<T>): Single<T> {
     return if (condition) {
         block()

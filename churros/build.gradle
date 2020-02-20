@@ -14,9 +14,6 @@ android {
         versionName churrosVersion
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-    compileOptions {
-        kotlinOptions.freeCompilerArgs += ['-module-name', "com.asapp.churros"]
-    }
     buildTypes {
         release {
             minifyEnabled false
@@ -49,7 +46,7 @@ bintray {
 publishing {
     publications {
         Production(MavenPublication) {
-            artifact("$buildDir/outputs/aar/app-release.aar")
+            artifact("$buildDir/outputs/aar/churros-release.aar")
             groupId 'com.asapp.churros'
             artifactId 'churros'
             version churrosVersion

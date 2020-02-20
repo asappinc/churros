@@ -15,7 +15,7 @@ jobs:
       - checkout
       - run:
           name: Run Tests
-          command: ./gradlew :app:testReleaseUnitTest --no-daemon --max-workers 4
+          command: ./gradlew :churros:testReleaseUnitTest --no-daemon --max-workers 4
           no_output_timeout: 5m
 
 workflows:

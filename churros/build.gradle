@@ -46,7 +46,7 @@ bintray {
 publishing {
     publications {
         Production(MavenPublication) {
-            artifact("$buildDir/outputs/aar/app-release.aar")
+            artifact("$buildDir/outputs/aar/churros-release.aar")
             groupId 'com.asapp.churros'
             artifactId 'churros'
             version churrosVersion

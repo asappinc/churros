@@ -14,6 +14,9 @@ android {
         versionName churrosVersion
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    compileOptions {
+        kotlinOptions.freeCompilerArgs += ['-module-name', "com.asapp.churros"]
+    }
     buildTypes {
         release {
             minifyEnabled false

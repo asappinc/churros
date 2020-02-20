@@ -20,7 +20,7 @@ Then it's a matter of adding the dependency.
 ```groovy
 dependencies {
     // Churros
-    implementation "com.asapp.churros:churros:0.1.0"
+    implementation "com.asapp.churros:churros:0.1.1"
 }
 ```
 

@@ -66,3 +66,8 @@ This code will complain that you missed thinking about Guacamole
     }
     .exhaustive()
 ```
+
+## Context.toast
+```kotlin
+    activitiy.toast(R.string.auth_error)
+```

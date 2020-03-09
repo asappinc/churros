@@ -10,7 +10,7 @@ buildscript {
         kotlinVersion = '1.3.50'
         rxjavaVersion = '2.1.0'
 
-        churrosVersion = '0.1.1'
+        churrosVersion = '0.2.0'
     }
     repositories {
         google()

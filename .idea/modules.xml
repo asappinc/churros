@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Churros.iml" filepath="$PROJECT_DIR$/Churros.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Churros.iml" filepath="$PROJECT_DIR$/Churros.iml" group="Churros" />
+      <module fileurl="file://$PROJECT_DIR$/churros/Churros-churros.iml" filepath="$PROJECT_DIR$/churros/Churros-churros.iml" group="Churros/churros" />
       <module fileurl="file://$PROJECT_DIR$/churros/app.iml" filepath="$PROJECT_DIR$/churros/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/churros/churros.iml" filepath="$PROJECT_DIR$/churros/churros.iml" />
       <module fileurl="file://$PROJECT_DIR$/churros-Churros.iml" filepath="$PROJECT_DIR$/churros-Churros.iml" />

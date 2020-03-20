@@ -20,7 +20,7 @@ Then it's a matter of adding the dependency.
 ```groovy
 dependencies {
     // Churros
-    implementation "com.asapp.churros:churros:0.1.1"
+    implementation "com.asapp.churros:churros:0.2.0"
 }
 ```
 
@@ -65,4 +65,9 @@ This code will complain that you missed thinking about Guacamole
         CHIPS -> buyGuacamole()
     }
     .exhaustive()
+```
+
+## Context.toast
+```kotlin
+    activitiy.toast(R.string.auth_error)
 ```

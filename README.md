@@ -71,3 +71,12 @@ This code will complain that you missed thinking about Guacamole
 ```kotlin
     activitiy.toast(R.string.auth_error)
 ```
+
+## Single<List<IN>>.flatMapList
+```kotlin
+        fun getAccountInDB(id: Int): Single<Account> = Single.just(Account(id))
+        fun getItemsFromNetwork(): Single<List<Int>> = Single.just(listOf(101, 42, 3))
+
+        val result: Single<List<Account>> = getItemsFromNetwork()
+            .flatMapList { getAccountInDB(it) }
+```

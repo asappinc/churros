@@ -26,3 +26,16 @@ fun <T> Observable<T>.startWith(item: T, condition: Boolean): Observable<T> = if
 } else {
     this
 }
+
+fun <In, Out> Single<List<In>>.flatMapList(mapper: (In) -> Single<Out>): Single<List<Out>> {
+    return flatMap { list ->
+        val map = list.map { mapper(it).toObservable() }
+
+        Observable
+            .zip(map) { it }
+            .firstOrError()
+    }
+        .map { arr ->
+            arr.map { it as Out }.toList()
+        }
+}

@@ -40,4 +40,18 @@ class RxUnitTest {
             .test()
             .assertValue(1)
     }
+
+    @Test
+    fun testFlatMapList() {
+        fun fakeDbCall(n: Int) = Single.just(2 * n)
+        fun fakeNetworkCall() = Single.just(listOf(1, 2, 3))
+
+        val testObserver = fakeNetworkCall()
+            .flatMapList { fakeDbCall(it) }
+            .test()
+
+        assertEquals(1, testObserver.valueCount())
+        val values = testObserver.values().first()
+        assertEquals(listOf(2, 4, 6), values)
+    }
 }

@@ -74,9 +74,15 @@ This code will complain that you missed thinking about Guacamole
 
 ## Single<List<IN>>.flatMapList
 ```kotlin
-        fun getAccountInDB(id: Int): Single<Account> = Single.just(Account(id))
-        fun getItemsFromNetwork(): Single<List<Int>> = Single.just(listOf(101, 42, 3))
+    fun getAccountInDB(id: Int): Single<Account> = Single.just(Account(id))
+    fun getItemsFromNetwork(): Single<List<Int>> = Single.just(listOf(101, 42, 3))
 
-        val result: Single<List<Account>> = getItemsFromNetwork()
-            .flatMapList { getAccountInDB(it) }
+    val result: Single<List<Account>> = getItemsFromNetwork()
+        .flatMapList { getAccountInDB(it) }
+```
+
+## Int.toOrdinalNumeral
+```kotlin
+    11.toOrdinalNumeral() // "11th"
+    21.toOrdinalNumeral() // "21st"
 ```

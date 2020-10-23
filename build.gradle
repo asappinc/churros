@@ -8,7 +8,7 @@ buildscript {
 
         androidSupportLibVersion = '27.1.1'
         kotlinVersion = '1.4.10'
-        rxjavaVersion = '2.1.0'
+        rxjavaVersion = '2.2.7'
 
         churrosVersion = '0.3.0'
     }

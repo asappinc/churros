@@ -56,12 +56,12 @@ This code will work happily.
 This code will complain that you missed thinking about Guacamole
 ```kotlin
     enum class Snack {
-        HUMUS, CHIPS, GUACAMOLE
+        HUMMUS, CHIPS, GUACAMOLE
     }
     val today = GUACAMOLE
 
     when (today) {
-        HUMUS -> getPita()
+        HUMMUS -> getPita()
         CHIPS -> buyGuacamole()
     }
     .exhaustive()
@@ -69,7 +69,7 @@ This code will complain that you missed thinking about Guacamole
 
 ## Context.toast
 ```kotlin
-    activitiy.toast(R.string.auth_error)
+    activity.toast(R.string.auth_error)
 ```
 
 ## Single<List<IN>>.flatMapList
